@@ -1,0 +1,81 @@
+:root
+{
+    /* layout */
+    --info-horizontal-hem: 0px;
+
+    /* details */
+    --menu-button-minor-hem: 8px;
+    --menu-button-major-hem: var(--vertical-hem);
+    --menu-button-font-size: 100%;
+    --menu-button-icon-size: 24px;
+}
+
+#accessibility
+{
+    display: inline-flex;
+    flex-wrap: wrap;
+    background-color: navy;
+}
+
+#accessibility .menu-button
+{
+    display: flex;
+    align-items: center;
+    padding-top: var(--menu-button-minor-hem);
+    padding-bottom: var(--menu-button-minor-hem);
+    font-size: var(--menu-button-font-size);
+    font-style: normal;
+    text-decoration: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+#accessibility .menu-button.icon:before,
+#accessibility .menu-button.sup:after
+{
+    flex-shrink: 0;
+    width: var(--menu-button-icon-size);
+    height: var(--menu-button-icon-size);
+    margin-left: var(--menu-button-minor-hem);
+    margin-right: var(--menu-button-minor-hem);
+    background-size: var(--menu-button-icon-size);
+    background-repeat: no-repeat;
+    content: "";
+}
+
+#accessibility .menu-button.icon .content
+{
+    flex-grow: 1;
+}
+
+#accessibility .menu-button .content
+{
+    margin-left: var(--menu-button-minor-hem);
+    margin-right: var(--menu-button-minor-hem);
+}
+
+#accessibility .menu-button.icon .content
+{
+    margin-left: 0;
+    margin-right: var(--menu-button-minor-hem);
+}
+
+#accessibility .menu-button#increase-font-trigger:before
+{
+    background-image: url('./images/icons.cinnamon/a_plus.svg');
+}
+
+#accessibility .menu-button#decrease-font-trigger:before
+{
+    background-image: url('./images/icons.cinnamon/a_minus.svg');
+}
+
+#accessibility .menu-button#toggle-contrast-trigger:before
+{
+    background-image: url('./images/icons.cinnamon/contrast.svg');
+}
+
+#accessibility .menu-button#reset-accessibility-trigger:before
+{
+    background-image: url('./images/icons.cinnamon/reset.svg');
+}
