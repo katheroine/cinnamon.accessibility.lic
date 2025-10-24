@@ -1,14 +1,9 @@
-:root
-{
-    /* layout */
-    --info-horizontal-hem: 0px;
+/*
+    Parameters:
 
-    /* details */
-    --menu-button-minor-hem: 8px;
-    --menu-button-major-hem: var(--vertical-hem);
-    --menu-button-font-size: 100%;
-    --menu-button-icon-size: 24px;
-}
+    --menu-button-hem
+    --menu-button-icon-size
+*/
 
 #accessibility
 {
@@ -21,9 +16,8 @@
 {
     display: flex;
     align-items: center;
-    padding-top: var(--menu-button-minor-hem);
-    padding-bottom: var(--menu-button-minor-hem);
-    font-size: var(--menu-button-font-size);
+    padding-top: var(--menu-button-hem);
+    padding-bottom: var(--menu-button-hem);
     font-style: normal;
     text-decoration: none;
     cursor: pointer;
@@ -36,8 +30,8 @@
     flex-shrink: 0;
     width: var(--menu-button-icon-size);
     height: var(--menu-button-icon-size);
-    margin-left: var(--menu-button-minor-hem);
-    margin-right: var(--menu-button-minor-hem);
+    margin-left: var(--menu-button-hem);
+    margin-right: var(--menu-button-hem);
     background-size: var(--menu-button-icon-size);
     background-repeat: no-repeat;
     content: "";
@@ -50,14 +44,14 @@
 
 #accessibility .menu-button .content
 {
-    margin-left: var(--menu-button-minor-hem);
-    margin-right: var(--menu-button-minor-hem);
+    margin-left: var(--menu-button-hem);
+    margin-right: var(--menu-button-hem);
 }
 
 #accessibility .menu-button.icon .content
 {
     margin-left: 0;
-    margin-right: var(--menu-button-minor-hem);
+    margin-right: var(--menu-button-hem);
 }
 
 #accessibility .menu-button#increase-font-trigger:before
